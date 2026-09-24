@@ -22,7 +22,7 @@ interface AvisosApi {
     @POST("auth/logout")
     suspend fun logout(@Body body: RefreshBody)
 
-    // ---- con token: el `Authorization: Bearer …` lo pone el interceptor
+    // ---- con token: el `Authorization: Bearer ...` lo pone el interceptor
     @GET("auth/me")
     suspend fun me(): MeDto
 
